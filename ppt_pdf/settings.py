@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-cyw4!5tb1r5j$+#d-#3hn)8bf$hl9twg=#g0t1xvcfpjm_^l)%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ppt2pdf.azurewebsites.net']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

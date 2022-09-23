@@ -1,7 +1,7 @@
 import os
 from django.shortcuts import render
 import subprocess
-
+from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 from django.http import HttpResponse
 from .models import files
@@ -12,6 +12,7 @@ def index(request):
     return render(request,'index.html',{'a':a})
     # return HttpResponse("Hello, world. You're at the polls index.")
 
+@csrf_exempt
 def upload(request):
     # link = os.path.join(os.getcwd(),"static/p_pdf/unit3.pptx")
     # print(os.path.join('static/p_pdf/unit3.pptx'))
